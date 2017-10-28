@@ -1,0 +1,265 @@
+*{
+  box-sizing: border-box;
+}
+
+.header{
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(255, 0, 0, 0.5);
+  background-color: green;
+  border-top-right-radius: 45%;
+  border-top-left-radius:50%;
+  border-bottom-right-radius:45%;
+  border-bottom-left-radius:50%;
+  font-family: 'Lato', sans-serif;
+  font-weight:400;
+  font-style: italic;
+  cursor: pointer;
+
+}
+
+h2 {
+  text-align:center;
+  background-color:red;
+  padding:5px;
+  font-style: italic;
+  border-radius:45%;
+}
+
+
+.up {
+
+width:100%;
+display:block;
+border: solid black;
+}
+.down {
+  display:block;
+  border: dotted green;
+}
+
+.wrapper {
+  max-width:100%;
+  margin:0 auto;
+  text-align: center;
+
+}
+fieldset {
+  border:none;
+  width:100%;
+  background-color: yellow;
+  min-height:100%;
+  overflow: hidden;
+}
+
+.info {
+
+  padding-bottom:15px;
+  text-transform: capitalize;
+  color:blue;
+  margin-bottom: 15px;
+  margin-right:20px;
+  padding-right:90px;
+
+}
+.third{
+  display:block;
+  border: solid #0000;
+}
+
+.field1 {
+  background-color: green;
+}
+input::placeholder {
+  text-align: right;
+  max-width:100%;
+
+
+}
+
+input[type="name"],
+input[type="mail"],
+input[type="phone"],
+input[type="Address"],
+input[type="city"]{
+  width:320px;
+  padding:15px;
+  background-color:orange;
+  margin:10px;
+  height:17px;
+  display:block;
+  box-shadow: inset -2px -2px;
+}
+select{
+  display:block;
+  width:330px;
+  float:left;
+  padding-top: 10px;
+  background-color: orange;
+}
+
+input[type="Zip"]:hover{
+  width:160px;
+  background-color:orange;
+  padding:10px;
+  display:inline-block;
+  cursor:alias;
+
+}
+input[type="Zip"]:focus{
+  background-color: plum;
+}
+label[for="name"],
+label[for="mail"],
+label[for="phone"],
+label[for="Address"],
+label[for="city"],
+label[for="State"],
+label[for="Zip"]:not(old){
+
+  display: block;
+  height:17px;
+  text-align: left;
+  margin-right:20px;
+
+  margin-left:10px;
+  padding-top:15px;
+  cursor: progress;
+}
+
+
+
+
+
+
+input[type="Zip"]{
+  margin-right:300px;
+}
+.news{
+  padding-top:20px;
+  color:green;
+  font-size:0.9em;
+  text-align:left;
+}
+.field3, .field2{
+  text-align:left;
+  margin:0 auto;
+  padding-bottom:20px;
+}
+.format{
+  text-align:left;
+  padding-top:30px;
+  color:chocolate;
+  height:60px;
+}
+.last{
+  text-align: left;
+  padding-top:30px;
+
+}
+textarea[id="comment"] {
+  display:block;
+  width:720px;
+  padding:10px;
+  resize:none;
+
+}
+textarea[id="comment"]:focus{
+  background-color: teal;
+
+}
+
+button[type="submit"]{
+display:block;
+margin:0 auto;
+margin-top:20px;
+padding:30px;
+
+width:320px;
+background-color:pink;
+margin-left:15px;
+border-radius:9px;
+border: 1px solid;
+
+}
+button{
+  font-size:16px;
+  color:#006400;
+  cursor:progress;
+}
+/***media query ***/
+@media (min-width:768px) {
+
+/***align the wrapper and identify from the rest of div***/
+
+.wrapper{
+  margin:0 auto;
+  max-width:80%;/***everything should contain in 96% of the container***/
+  text-align:center;
+  background-color:magenta;
+}
+.phrase{
+  font-size:25px;
+  font-weight:normal;
+}
+
+
+
+  .up{
+    border:solid #428bca;
+  }
+  .down {
+    border: dotted #662674;
+  }
+  .info {
+    text-align:left;
+    font-size:20px;
+    color:#130c23;
+
+
+  }
+  .main-section{
+    width:70%;
+    margin:0 auto;
+
+
+
+  }
+  input[type="Zip"]{
+    display: block;
+  }
+fieldset{
+width:100%;
+margin: 0 auto;
+}
+
+input[type="name"],
+input[type="mail"],
+input[type="phone"],
+input[type="Address"],
+input[type="city"],
+select[id="state"]{
+
+  width:50%;
+float:right;
+
+
+
+
+
+}
+input[type="Zip"]{
+  width:18%;
+  float:right;
+  height:20px;
+}
+
+select {
+  margin-right:10px;
+}
+
+
+
+
+
+
+}
