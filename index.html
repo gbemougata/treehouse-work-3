@@ -1,11 +1,12 @@
 <!doctype html>
-<html lan="en">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Online Registration Form</title>
-  <link rel="stylesheet" href="css/styles.css"
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Registration Form</title>
+  <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
 </head>
 <body>
   <div class="wrapper">
@@ -26,39 +27,51 @@
 			<hr class="up">
 
 			<hr class="down">
-		</div>
+    </div>
+
 	</header>
 
 
+
 <section>
-	<div class="main-section">
+
 		<form action="index.html" method="post">
 
 
-        <fieldset class="field1" clearfix>
+        <fieldset class="field1">
 
 
 				     <legend  class="info">Contact information</legend>
+
               <div >
 
 
-          <label for="name" class="name">Full Name:</label><br>
+          <label for="name" class="name">Full Name</label><br>
 				  <input type="name" name="user_name" placeholder="required" id="name"><br>
 
-
+        </div>
+        <div>
 
 				<label for="mail" class="mail" >Email Address</label><br>
 				<input type="mail" name="user_mail" placeholder="required" id=
 				"mail"><br>
+      </div>
+      <div>
 
 
 
 				<label for="phone" class="phone" >Phone Number</label><br> <input type="phone" name="user_phone" id="phone"><br>
+      </div>
+      <div>
 
 				<label for="Address" class="Address">Street Address</label><br>
 				<input type="Address" name="user_address" id="Address"><br>
+      </div>
+      <div>
 				<label for="city" class="city">City</label><br>
 				<input type="city" name="user_city" id="city"><br>
+      </div>
+      <div>
 				<label for="State">State</label><br>
 
 				<select id="state" name="user_state">
@@ -216,6 +229,8 @@
 						Wyoming
 					</option>
 				</select><br>
+      </div>
+      <div>
 				<label for="Zip">Zip Code</label><br>
 				<input type="Zip" name="user_Zip"  id="code"><br>
       </div>
@@ -241,67 +256,62 @@
 
 				<input type="checkbox" name="user_check" id="checkbox" value="checkbox">
 				<label for="checkbox">Html News</label>
-
-				<input type="checkbox" name="user_check" id="checkbox" value="checkbox">
-				<label for="checkbox">Css News</label>
-
-
-
-				<input type="checkbox" name="user_check" id="checkbox" value="checkbox">
-        <label for="checkbox">Javascript News</label>
-
       </div>
-    </legend>
-  </fieldset>
-  <fieldset class="field3">
+      <div>
+
+				<input type="checkbox" name="user_check" id="user_check" value="checkbox">
+				<label for="checkbox">Css News</label>
+      </div>
+      <div>
+
+
+
+				<input type="checkbox" name="user_check" id="box" value="checkbox">
+        <label for="checkbox">Javascript News</label>
+      </div>
+
+
+
+
+
     <legend class="format">Newsletter Format</legend>
-  <div class="group">
 
 
 
 
 
+     <div>
 
 				 <input type="radio" name="user_check"
 				id="radio" value="radio"> <label for="radio">Html</label>
+      </div>
+      <div>
 
 
 				<input type="radio" name="user_check" id="radio" value="radio">
 				<label for="radio">plain text</label>
-
-
       </div>
-
-  </fieldset>
-  <div>
-<fieldset class="field4">
-<legend class="last"> Other topic you'd like to hear about it </legend>
+      <div>
 
 
 
 
 
 
-				<textarea id="comment"></textarea>
-      </fieldset>
-
-  </div>
-
-			<div class="submit">
-				<button type="submit">Sign Up</button>
-			</div>
-    </form>
-
-			<footer>
-				<div class="footer-container">
-					<p>
-						Copyright the Code Review
-					</p>
-				</div>
-			</footer>
-
-	</div>
+<p > Other topic you'd like to hear about it </p>
+<textarea id="comment" name="user_comment"></textarea>
+</div>
+<div class="submit">
+  <button type="Submit" name="Submit">Sign Up</button>
+</div>
+</fieldset>
+<div>
+<footer class="main-footer">
+  <p>Copyright The Code Review</p>
+</footer>
+</form>
 </section>
 </div>
+
 </body>
 </html>
