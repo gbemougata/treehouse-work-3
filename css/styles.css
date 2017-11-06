@@ -1,195 +1,158 @@
 *{
-  box-sizing: border-bo
+
+  box-sizing: border-box;
 }
-.wrapper{
+.container{
   max-width:100%;
-  margin:0 auto;
-  width:90%;
-  padding:18px;
-text-align: center;
-height:120px;
-}
-.header{
-  font-family: 'Lato', sans-serif;
-  font-size:24px;
-  color:plum;
-  background-color: teal;
-  font-style: italic;
-  font-weight: bolder;
-  height:50px;
-  border-radius: 25%;
-  padding-top:5px;
+  width:auto;
+  text-align: center;
+  height:auto;
+  padding:10px;
 
-}
-h2{
-    font-family: 'Lato', sans-serif;
-    font-weight:300;
-    font-style: italic;
-    font-size: 22px;
-    color:teal;
-    background-color:plum;
-    border-radius: 25%;
-
-}
-.up{
-  border:dotted green;
-}
-.down{
-  border:solid grey;
 }
 form{
-  max-width:100%;
-  margin:0 auto;
-  width:80%;
-  height:65px;
-  padding-right:80px;
+  width:auto;
+  max-width:90%;
+  padding:5px;
+margin:5px;
 }
 fieldset{
-  border:none;
-
-
+  max-width:90%;
+  width:auto;
+  height:auto;
+  padding:10px;
+  border: none;
 }
-.info{
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-  color:#0083d7;
-  padding:5px;
-  display:block;
-  text-align:left;
-}
-input[type="name"],
-input[type="mail"],
-input[type="phone"],
-input[type="Address"],
-input[type="city"]{
-  display:block;
+input[type="text"],
+select[id="state"]{
+
   width:320px;
   padding:10px;
-}
-input[type="Zip"]{
   display:block;
-  width:140px;
-  padding:10px;
-}
-input::placeholder {
-  text-align: right;
-}
-select[id="state"]{
-  display:block;
-  width:345px;
-  padding:20px;
+
 }
 label[for="name"],
 label[for="mail"],
 label[for="phone"],
-label[for="Address"],
+label[for="address"],
 label[for="city"],
-label[for="State"],
-label[for="Zip"]{
+label[for="state"],
+label[for="text"]{
+
   display:block;
   text-align: left;
 }
-.third{
-  border: dotted blue;
+.info{
+  display:block;
+  text-align: left;
+}
+#code{
+  display:block;
+  width:140px;
+
+}
+input::placeholder{
+  text-align: right;
 }
 .field2{
   display:block;
   text-align: left;
-  padding:10px;
 }
-.format{
-  padding:10px;
-  color:#d55e00;
-}
-.news{
-  color:#7a0116;
-}
-div p{
-  color:blue;
-}
-textarea{
+textarea[id="comment"]{
+  display:block;
   width:320px;
-  padding:10px;
+  padding: 10px;
+
 }
 button[type="submit"]{
-  width:340px;
-  color:red;
-padding:20px;
-  font-style:italic;
-  background-color: green;
-  font-size: 24px;
+  padding:20px;
+  margin-top: 10px;
+  width:320px;
 }
-.main-footer{
-  display:block;
-  margin:0 auto;
-  text-align: center;
-}
-.main-footer p{
-  font-family: 'Lato', sans-serif;
-  font-size:20px;
-  text-align: center;
-  padding-bottom:10px;
-
-  font-style: italic;
-}
-button[type="submit"]:active{
-  background-color: #7a0116;
+button[type="submit"]:focus{
+  background-color:salmon;
 }
 input:focus{
-  background-color: #14cece;
+  color:red;
+  background-color: #000;
+}
+h1{
+  font-family: 'Lusitana', serif;
+  font-size:23px;
+  font-weight: 400;
+  font-style: italic;
+  background-color: teal;
+  border-radius:25px;
+  padding:5px;
+  display:block;
+
+}
+h2{
+  font-family: 'Lusitana', serif;
+  font-size:22px;
+  font-weight:300;
+  font-style:italic;
+  color:#000;
+  background-color:yellow;
+  border-radius:25px;
+  display:block;
+
+}
+.info{
+  font-size:20px;
+  color:gray;
+}
+.news{
+  font-size:20px;
+  color:orange;
 }
 textarea:active{
-  background-color: #cece14;
+  background-color:blue;
+  color:black;
+  resize:none;
 }
-body{
-  background-color: pink;
+input{
+  appearance:none;
+  outline:none;
+  transition:border 0.3s;
 }
-@media (min-width:768px ){
-  wrapper{
-    max-width:100%;
-    margin:0 auto;
-    width:60%;
-    padding:24px;
-
-
-  }
-  input[type="name"],
-  input[type="mail"],
-  input[type="phone"],
-  input[type="Address"],
-  input[type="city"],
-  select[id="state"]{
-    width:300px;
-    float:right;
-    position: relative;
-
-  }
-
-  input[type="Zip"]{
-    width:150px;
-    float:right;
-
-
-  }
-  select[id="state"]{
-    width:325px;
-  }
-  .third{
-    margin-top:25px;
-  }
-
-  body{
-    background-color:orange;
-  }
-
-textarea{
-  width:510px;
+.up{
+  border: solid black;
 }
-button[type="submit"]{
-  width:530px;
+.down{
+  border: solid green;
+}
+.field1{
+  padding:5px;
+  margin:7px;
+}
+.field1 div label{
+  padding:8px;
 }
 
+@media (min-width:768px){
+  .filed1 div label{
+    display:inline-block;
+    width:250px;
 
 
+  }
+.field1 div input{
+  display:inline-block;
+  width:300px;
 
+}
+.field1 div select{
+  display:inline-block;
+  width:300px;
+
+}
+#code{
+  display:inline-block;
+  width:300px;
+
+}
+fieldset{
+  margin:0 auto;
+}
 }
