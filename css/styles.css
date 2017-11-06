@@ -129,30 +129,51 @@ input{
 .field1 div label{
   padding:8px;
 }
+@media (min-width:768px) {
 
-@media (min-width:768px){
-  .filed1 div label{
-    display:inline-block;
-    width:250px;
-
-
+  body{
+    max-width:100%;
+    margin:0 auto;
   }
-.field1 div input{
+  .field1{
+    display:block;
+    text-align: left;
+    background-color: red;
+    padding-top:5px;
+    margin:0 auto;
+}
+.field1 div input,select,#code{
   display:inline-block;
-  width:300px;
+  width:35%;
+  padding:2px;
 
 }
-.field1 div select{
+select[id="state"]{
   display:inline-block;
-  width:300px;
+  width:35%;
+}
+.field1 div label{
+  display:inline-block;
+  width:30%;
+}
+.info{
+
+  padding-bottom:20px;
+  padding-left:45px;
+
 
 }
-#code{
-  display:inline-block;
-  width:300px;
-
+.field2{
+  margin:0 auto;
+  background-color:orange;
 }
-fieldset{
+textarea[id="comment"],button[type="submit"]{
+  width:670px;
+}
+.news{
+  padding-bottom:20px;
+}
+.field1,.field2{
   margin:0 auto;
 }
 }
