@@ -46,12 +46,12 @@ label[for="text"]{
   display:block;
   text-align: left;
 }
-#code{
+#text{
   display:block;
   width:140px;
 
 }
-input::placeholder{
+::placeholder{
   text-align: right;
 }
 .field2{
@@ -87,6 +87,10 @@ h1{
   display:block;
 
 }
+select:focus{
+  color:red;
+  background-color:#000;
+}
 h2{
   font-family: 'Lusitana', serif;
   font-size:22px;
@@ -110,11 +114,6 @@ textarea:active{
   background-color:blue;
   color:black;
   resize:none;
-}
-input{
-  appearance:none;
-  outline:none;
-  transition:border 0.3s;
 }
 .up{
   border: solid black;
@@ -142,7 +141,7 @@ input{
     padding-top:5px;
     margin:0 auto;
 }
-.field1 div input,select,#code{
+.field1 div input,select,#text{
   display:inline-block;
   width:35%;
   padding:2px;
