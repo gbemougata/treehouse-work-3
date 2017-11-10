@@ -1,220 +1,218 @@
-*{
+*, *::before, *::after {
+  -moz-box-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+	box-sizing: border-box;
+}
+/***base styling***/
+.container {
+	max-width: 100%;
+	width: auto;
+	text-align: center;
+	height: auto;
+	padding: 10px;
+	margin: 0 auto;
+}
+/***mobile layout***/
+form {
+	width: auto;
+	max-width: 90%;
+	padding: 5px;
+	margin: 5px auto;
+}
+fieldset {
+	max-width: 90%;
+	width: auto;
+	height: auto;
+	padding: 10px;
+	border: none;
+}
+input[type="text"], select[id="state"], input[type="tel"], input[type="email"] {
+	padding: 10px;
+	display: block;
+}
+label[for="name"], label[for="mail"], label[for="phone"], label[for="address"], label[for="city"], label[for="state"], label[for="text"] {
+	display: block;
+	text-align: left;
+}
+/***align class="info" with the fieldset***/
+.info {
+	display: block;
+	text-align: left;
+}
+#text {
+	display: block;
+	width: 140px;
+}
+/***since the project will be texting on chrome i used -webkit***/
+::-webkit-input-placeholder{
+font-style: italic;
+color: red;
+text-align: right;
 
-  box-sizing: border-box;
 }
-.container{
-  max-width:100%;
-  width:auto;
-  text-align: center;
-  height:auto;
-  padding:10px;
 
+.field2 {
+	display: block;
+	text-align: left;
 }
-form{
-  width:auto;
-  max-width:90%;
-  padding:5px;
-margin:5px;
+textarea[id="comment"] {
+	display: block;
+	width: 320px;
+	padding: 10px;
 }
-fieldset{
-  max-width:90%;
-  width:auto;
-  height:auto;
-  padding:10px;
-  border: none;
+button[type="submit"] {
+	padding: 20px;
+	margin-top: 10px;
+	width: 320px;
 }
-input[type="text"],
-select[id="state"]{
-
-  width:320px;
-  padding:10px;
+button[type="submit"]:focus {
+	background-color: salmon;
+}
+input:focus {
+	color: red;
+	background-color: #000;
+}
+h1 {
+	font-family: 'Lusitana', serif;
+	font-size: 23px;
+	font-weight: 400;
+	font-style: italic;
+	background-color: teal;
+	border-radius: 25px;
+	padding: 5px;
+	display: block;
+  text-align:center;
+  margin:0 auto;
+}
+select:focus {
+	color: red;
+	background-color: #000;
+}
+h2 {
+	font-family: 'Lusitana', serif;
+	font-size: 22px;
+	font-weight: 300;
+	font-style: italic;
+	color: #000;
+	background-color: yellow;
+	border-radius: 25px;
+	display: block;
+  text-align:center;
+  margin:0 auto;
+}
+.info {
+	font-size: 20px;
+	color: gray;
+}
+.news {
+	font-size: 20px;
+	color: orange;
+}
+textarea:active {
+	background-color: blue;
+	color: black;
+	resize: none;
+}
+.up {
+	border: solid black;
+}
+.down {
+	border: solid green;
+}
+.field1 {
+	padding: 5px;
+	margin: 7px;
+}
+.field1 div label {
+	padding: 8px;
+}
+.main-footer {
+	margin:auto;
+  margin-right:0;
+  margin-left:0;
   display:block;
-
 }
-label[for="name"],
-label[for="mail"],
-label[for="phone"],
-label[for="address"],
-label[for="city"],
-label[for="state"],
-label[for="text"]{
-
-  display:block;
-  text-align: left;
-}
-.info{
-  display:block;
-  text-align: left;
-}
-#text{
-  display:block;
-  width:140px;
-
-}
-::placeholder{
-  text-align: right;
-}
-.field2{
-  display:block;
-  text-align: left;
-}
-textarea[id="comment"]{
-  display:block;
-  width:320px;
-  padding: 10px;
-
-}
-button[type="submit"]{
-  padding:20px;
-  margin-top: 10px;
-  width:320px;
-}
-button[type="submit"]:focus{
-  background-color:salmon;
-}
-input:focus{
-  color:red;
-  background-color: #000;
-}
-h1{
-  font-family: 'Lusitana', serif;
-  font-size:23px;
-  font-weight: 400;
-  font-style: italic;
-  background-color: teal;
-  border-radius:25px;
-  padding:5px;
-  display:block;
-
-}
-select:focus{
-  color:red;
-  background-color:#000;
-}
-h2{
-  font-family: 'Lusitana', serif;
-  font-size:22px;
-  font-weight:300;
-  font-style:italic;
-  color:#000;
-  background-color:yellow;
-  border-radius:25px;
-  display:block;
-
-}
-.info{
-  font-size:20px;
-  color:gray;
-}
-.news{
-  font-size:20px;
-  color:orange;
-}
-textarea:active{
-  background-color:blue;
-  color:black;
-  resize:none;
-}
-.up{
-  border: solid black;
-}
-.down{
-  border: solid green;
-}
-.field1{
-  padding:5px;
-  margin:7px;
-}
-.field1 div label{
-  padding:8px;
-}
+/***Desktop layout***/
 @media (min-width:768px) {
+	body {
+		max-width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.field1 {
+		display: block;
+		text-align: left;
+		background-color: red;
+		padding-top: 5px;
+		margin: 0 auto;
+	}
+	.field1 div input, select, #text {
+		display: inline-block;
+		width: 35%;
+		padding: 2px;
+		margin-right: 30px;
+	}
+	select[id="state"] {
+		display: inline-block;
+		width: 35%;
+	}
+	.field1 div label {
+		display: inline-block;
+		width: 30%;
+	}
+	.info {
+		padding-bottom: 20px;
+		padding-right: 25px;
+	}
+	@keyframes styles {
+		from {
+      background-color: red;
+    }
+		to {
+      background-color: plum;
+    }
+	}
+	.field1 {
+		animation-name: styles;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+		animation-duration: 3s;
+	}
+	.field2 {
+		margin: 0 auto;
+		background-color: orange;
+		text-align: left;
+		display: block;
+	}
+	@keyframes color {
+		from {
+background-color: orange;
+}
+  		to {
+background-color: red;
+}
+	}
+	.field2 {
+		animation-name: color;
+		animation-duration: 3s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		align-items: center;
+	}
 
-  body{
-    max-width:100%;
-    margin:0 auto;
-  }
-  .field1{
-    display:block;
-    text-align: left;
-    background-color: red;
-    padding-top:5px;
-    margin:0 auto;
+textarea[id="comment"], button[type="submit"] {
+	width: 66%;
 }
-.field1 div input,select,#text{
-  display:inline-block;
-  width:35%;
-  padding:2px;
-  margin-right: 30px;
-
+.news {
+	padding-bottom: 20px;
 }
-select[id="state"]{
-  display:inline-block;
-  width:35%;
-
+.field1, .field2 {
+	margin: 0 auto;
 }
-.field1 div label{
-  display:inline-block;
-  width:30%;
-}
-.info{
-
-
-  padding-bottom:20px;
-  padding-right:25px;
-
-
-}
-@keyframes styles {
-
-    from {background-color: red;
-  }
-  to {background-color:plum;
-}
-}
-.field1{
-  animation-name: styles;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-}
-.field2{
-  margin:0 auto;
-  background-color:orange;
-  text-align: left;
-  display: block;
-}
-@keyframes color {
-  from{
-    background-color:orange;
-  }
-  to{background-color:red;}
-}
-.field2{
-  animation-name: color;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  align-items: center;
-}
-}
-textarea[id="comment"],button[type="submit"]{
-
-  width:66%;
-
-}
-
-.news{
-  padding-bottom:20px;
-}
-.field1,.field2,{
-  margin:0 auto;
-}
-.main-footer p{
-  margin:0 auto;
-  padding-right:205px;
-  display: block;
-  margin:3px;
-}
-
+.main-footer p {
+	margin: 0 auto;
+	padding-right: 205px;
+	display: block;
+	margin: 3px;
+	text-align: center;
 }
