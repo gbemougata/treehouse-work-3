@@ -16,7 +16,7 @@
 /***mobile layout***/
 form {
 	width: auto;
-	max-width: 90%;
+	max-width: 700px;
 	padding: 5px;
 	margin: 5px auto;
 }
@@ -65,14 +65,14 @@ text-align: right;
 }
 textarea[id="comment"] {
 	display: block;
-	width: 98%;
+
 	padding: 10px;
 
 }
 button[type="submit"] {
 	padding: 15px;
 	margin-top: 10px;
-	width: 98%;
+	
   margin-right:auto;
   margin-left:auto;
 }
