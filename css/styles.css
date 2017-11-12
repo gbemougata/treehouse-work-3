@@ -10,7 +10,8 @@
 	text-align: center;
 	height: auto;
 	padding: 10px;
-	margin: 0 auto;
+	margin-left:auto;
+  margin-right:auto;
 }
 /***mobile layout***/
 form {
@@ -29,10 +30,15 @@ fieldset {
 input[type="text"], select[id="state"], input[type="tel"], input[type="email"] {
 	padding: 10px;
 	display: block;
+  width:98%;
+  margin:0 auto;
 }
 label[for="name"], label[for="mail"], label[for="phone"], label[for="address"], label[for="city"], label[for="state"], label[for="text"] {
 	display: block;
 	text-align: left;
+  width:15%;
+
+
 }
 /***align class="info" with the fieldset***/
 .info {
@@ -41,7 +47,9 @@ label[for="name"], label[for="mail"], label[for="phone"], label[for="address"], 
 }
 #text {
 	display: block;
-	width: 140px;
+	width: 98%;
+  margin_left:auto;
+  margin-right:auto;
 }
 /***since the project will be texting on chrome i used -webkit***/
 ::-webkit-input-placeholder{
@@ -57,13 +65,16 @@ text-align: right;
 }
 textarea[id="comment"] {
 	display: block;
-	width: 320px;
+	width: 98%;
 	padding: 10px;
+
 }
 button[type="submit"] {
-	padding: 20px;
+	padding: 15px;
 	margin-top: 10px;
-	width: 320px;
+	width: 98%;
+  margin-right:auto;
+  margin-left:auto;
 }
 button[type="submit"]:focus {
 	background-color: salmon;
@@ -103,6 +114,7 @@ h2 {
 .info {
 	font-size: 20px;
 	color: gray;
+  padding-left:9px;
 }
 .news {
 	font-size: 20px;
@@ -148,22 +160,32 @@ textarea:active {
 	}
 	.field1 div input, select, #text {
 		display: inline-block;
-		width: 35%;
+		width: 40%;
 		padding: 2px;
-		margin-right: 30px;
+
 	}
+  textarea[id="comment"]{
+    display:block;
+    width:30%;
+  }
 	select[id="state"] {
 		display: inline-block;
-		width: 35%;
+		width: 40%;
+
 	}
 	.field1 div label {
 		display: inline-block;
-		width: 30%;
+		width: 10%;
+
 	}
 	.info {
 		padding-bottom: 20px;
 		padding-right: 25px;
 	}
+  button[type="submit"]{
+    display:inline-block;
+    width:30%;
+  }
 	@keyframes styles {
 		from {
       background-color: red;
@@ -209,10 +231,33 @@ textarea[id="comment"], button[type="submit"] {
 .field1, .field2 {
 	margin: 0 auto;
 }
-.main-footer p {
+.foot {
 	margin: 0 auto;
 	padding-right: 205px;
 	display: block;
-	margin: 3px;
-	text-align: center;
+	margin-left:auto;
+  margin-right:auto;
+
+}
+.ts{
+
+  width:79%;
+  display:block;
+
+}
+.info{
+  margin-left:50px;
+}
+}
+
+.container{
+  margin:0 auto;
+  text-align:center;
+}
+
+
+body{
+  margin:0 auto;
+  text-align:center;
+}
 }
